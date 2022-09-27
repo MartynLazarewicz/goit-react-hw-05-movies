@@ -67,7 +67,7 @@ export const App = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Nav>
-        <StyledLink to="/goit-react-hw-05-movies/">Home</StyledLink>
+        <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/movies">Movies</StyledLink>
       </Nav>
 
