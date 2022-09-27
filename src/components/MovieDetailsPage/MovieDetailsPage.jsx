@@ -7,7 +7,9 @@ export const MovieDetailsPage = () => {
   const { movieId } = useParams();
   const [movieById, setMovieById] = useState({});
   const location = useLocation();
-  const backLinkDefault = location.state ? '/movies' : '/';
+  const backLinkDefault = location.state
+    ? '/movies'
+    : '/goit-react-hw-05-movies/';
 
   useEffect(() => {
     renderDetails(movieId);
